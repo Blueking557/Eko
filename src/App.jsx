@@ -9,7 +9,7 @@ import TrustedBy from './Components/TrustedBy';
 
 export default function Home() {
   return (
-    <>
+    <div  className="overflow-x-hidden font-sans bg-white text-gray-800">
       <Navbar/>
       <Hero />
       <TrustedBy/>
@@ -19,7 +19,7 @@ export default function Home() {
       <Newsletter/>
 
       <Footer/>
-    </>
+    </div>
   );
 }
 

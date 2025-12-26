@@ -27,7 +27,7 @@ export default function Testimonials() {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = scrollRef.current.offsetWidth; 
+      const scrollAmount = scrollRef.current.offsetWidth;
       scrollRef.current.scrollBy({
         left: direction === "next" ? scrollAmount : -scrollAmount,
         behavior: "smooth",
@@ -36,23 +36,20 @@ export default function Testimonials() {
   };
 
   return (
-    <section
-      id="testimonials"
-      className="p-6 sm:p-10 border relative overflow-x-hidden"
-    >
+    <section id="testimonials" className="p-10 border relative overflow-x-hidden">
       {/* TITLE + ARROWS */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 gap-4 sm:gap-0">
+      <div className="flex justify-between items-center mb-8 flex-wrap">
         <div>
           <h1 className="text-2xl font-bold text-blue-950">
             People say about Our Products
           </h1>
-          <p className="text-blue-950 text-sm sm:text-base mt-1">
+          <p className="text-blue-950">
             Our products are trusted by medical professionals.
           </p>
         </div>
 
         {/* Arrows */}
-        <div className="flex gap-2">
+        <div className="flex gap-2 mt-4 md:mt-0">
           <button
             onClick={() => scroll("prev")}
             className="bg-gray-200 p-2 rounded-full hover:bg-gray-300 transition"
@@ -71,22 +68,22 @@ export default function Testimonials() {
       {/* TESTIMONIAL CARDS */}
       <div
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto pb-2 scroll-smooth"
+        className="flex gap-4 overflow-x-auto pb-2 scroll-smooth snap-x snap-mandatory"
       >
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col sm:flex-row min-w-[280px] sm:min-w-[300px] md:min-w-[320px] h-auto min-h-[200px] p-4 shadow-sm border-t hover:shadow-2xl rounded-lg gap-4 sm:gap-6 flex-shrink-0 bg-white"
+            className="min-w-[280px] sm:min-w-[300px] md:min-w-[320px] h-[200px] space-y-6 flex items-center justify-between p-4 shadow-sm border-t hover:shadow-2xl rounded-lg gap-6 flex-shrink-0 bg-white snap-start"
           >
             {/* LEFT BLOCK */}
             <div className="flex flex-col gap-3 flex-1">
-              <h3 className="text-sm sm:text-base text-blue-950 font-bold">
+              <h3 className="text-sm text-blue-950 font-bold mb-6">
                 {item.testimonial}
               </h3>
 
-              <div className="flex items-center gap-3 border-t-2 pt-2">
+              <div className="flex items-center gap-3 border-t-2 pt-2 flex-wrap">
                 <img
-                  src="/Eko/images/stethoscope.png"
+                  src="images/stethoscope.png"
                   alt="stethoscope"
                   className="w-10 h-10 object-contain"
                 />
@@ -98,8 +95,8 @@ export default function Testimonials() {
               </div>
             </div>
 
-            {/* RIGHT BLOCK */}
-            <div className="flex flex-row sm:flex-col items-start sm:items-end justify-between sm:justify-start">
+            {/* RIGHT BLOCK (REVIEWS + STARS) */}
+            <div className="flex flex-col items-end">
               <p className="text-sm font-semibold">{item.reviews}</p>
               <div className="flex gap-[2px] mt-1">
                 {[...Array(5)].map((_, i) => (
@@ -118,6 +115,9 @@ export default function Testimonials() {
     </section>
   );
 }
+
+
+
 
 
 

@@ -1,10 +1,11 @@
-// FILE: src/components/Hero.jsx
 import CTAButton from "./CTAButton";
 
 export default function Hero() {
   const handleScroll = (id) => {
     const section = document.getElementById(id);
-    if (section) section.scrollIntoView({ behavior: "smooth" });
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -27,7 +28,7 @@ export default function Hero() {
 
           {/* PRICE + COLORS */}
           <div className="flex flex-wrap items-center gap-3 mt-6">
-            <p className="text-2xl font-semibold whitespace-nowrap w-full sm:w-auto">
+            <p className="text-2xl font-semibold whitespace-nowrap">
               $349.99
             </p>
 
@@ -38,7 +39,7 @@ export default function Hero() {
               <div className="h-8 w-8 rounded-full bg-gradient-to-bl from-white via-gray-100 to-white" />
             </div>
 
-            <p className="text-gray-400 text-sm w-full sm:w-auto mt-2 sm:mt-0">
+            <p className="text-gray-400 text-sm w-full sm:w-auto">
               High Polish Copper
             </p>
           </div>
@@ -52,17 +53,19 @@ export default function Hero() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center items-center min-h-[280px] sm:min-h-[350px] md:min-h-[600px] bg-subtle-grid overflow-hidden">
+        <div className="relative flex justify-center items-center min-h-[280px] sm:min-h-[350px] md:min-h-[600px] bg-subtle-grid">
           <img
             src="/Eko/images/stethoscope.png"
             alt="3M Littmann CORE Digital Stethoscope"
-            className="w-full max-w-[240px] sm:max-w-[320px] md:max-w-lg object-contain"
+            className="relative z-10 w-full max-w-[260px] sm:max-w-sm md:max-w-lg object-contain"
           />
         </div>
       </div>
     </section>
   );
 }
+
+
 
 
 
