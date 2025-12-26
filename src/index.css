@@ -25,3 +25,6 @@
 .animate-scroll {
   animation: scroll 25s linear infinite;
 }
+html, body {
+  overflow-x: hidden;
+}

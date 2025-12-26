@@ -12,17 +12,16 @@ export default function TrustedBy() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Scrolling row */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden w-full">
           <div
             className="
-              flex w-max items-center
-              gap-10 sm:gap-16 lg:gap-20
+              flex items-center gap-10 sm:gap-16 lg:gap-20
               px-4 sm:px-10
+              min-w-full
               animate-scroll
               hover:[animation-play-state:paused]
             "
           >
-            {/* Duplicate logos for seamless loop */}
             {[...logos, ...logos].map((src, index) => (
               <img
                 key={index}
@@ -47,5 +46,6 @@ export default function TrustedBy() {
     </section>
   );
 }
+
 
 
