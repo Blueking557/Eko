@@ -1,10 +1,10 @@
 export default function TrustedBy() {
   const logos = [
-    "/images/Sutter-Health-logo.jpg",
-    "/images/Renown_health_logo.webp",
-    "/images/U-F Health.webp",
-    "/images/SanderlingHealth logo.jpg",
-    "/images/uams-logo.webp",
+    "/Eko/images/Sutter-Health-logo.jpg",
+    "/Eko/images/Renown_health_logo.webp",
+    "/Eko/images/U-F Health logo.webp",
+    "/Eko/images/SanderlingHealth logo.jpg",
+    "/Eko/images/uams-logo.webp",
   ];
 
   return (
@@ -32,7 +32,7 @@ export default function TrustedBy() {
                   h-6 sm:h-7 lg:h-8
                   w-auto
                   object-contain
-                  opacity-40
+                  opacity-80
                   grayscale
                   hover:opacity-100
                   hover:grayscale-0

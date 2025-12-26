@@ -2,19 +2,19 @@ import { Handbag } from "lucide-react";
 
 const products = [
   {
-    img: "/images/cardiopod.png",
+    img: "/Eko/images/cardiopod.png",
     description: "Cardiopod | Combo Package Stethoscope Case",
     price: "$29.99",
     bg: "bg-[#ecc8ec]",
   },
   {
-    img: "/images/eko-core.webp",
+    img: "/Eko/images/eko-core.webp",
     description: "Eko CORE Digital Device Set Attachment",
     price: "$259",
     bg: "bg-[#ede2cf]"
   },
   {
-    img: "/images/eko-duo.png",
+    img: "/Eko/images/eko-duo.png",
     description: "Eko DUO ECG + Digital Device Stethoscope",
     price: "$399",
     bg: "bg-[#E8E7F4]"

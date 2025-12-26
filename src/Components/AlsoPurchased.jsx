@@ -5,7 +5,7 @@ function AlsoPurchased() {
       {/* LEFT: IMAGE */}
       <div className="flex justify-center bg-subtle-grid p-6 relative">
         <img
-          src="/images/stethoscope.png"
+          src="/Eko/images/stethoscope.png"
           alt="Stethoscope"
           className="max-w-[280px] sm:max-w-[350px] md:max-w-[380px] h-auto object-contain -mb-16 md:-mb-20"
         />
