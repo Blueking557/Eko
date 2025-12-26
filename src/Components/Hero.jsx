@@ -45,7 +45,7 @@ export default function Hero() {
         {/* RIGHT IMAGE WITH GRID BACKGROUND */}
         <div className="relative flex justify-center items-center min-h-[400px] md:min-h-screen bg-subtle-grid">
           <img
-            src="/images/stethoscope.png"
+            src="/Eko/images/stethoscope.png"
             alt="3M Littmann CORE Digital Stethoscope"
             className="relative z-10 max-w-lg"
           />
