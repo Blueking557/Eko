@@ -2,13 +2,14 @@ function Newsletter() {
   return (
     <section
       id="contact"
-      className="bg-[#ede2cf] p-6 md:p-10 m-4 md:m-20 rounded-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-visible"
+      className="bg-[#ede2cf] p-6 md:p-10 m-4 md:m-20 rounded-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden"
     >
       {/* Left Side: Text & Input */}
       <div className="flex-1 space-y-6 pr-0 md:pr-8 z-10">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-950">
           Subscribe To Our <br /> Newsletter
         </h1>
+
         <p className="text-gray-700 text-sm md:text-base">
           To know more offers, subscribe to our newsletter.
         </p>
@@ -28,12 +29,19 @@ function Newsletter() {
         </div>
       </div>
 
-      {/* Right Side: Image Extending Downwards */}
-      <div className="flex-1 flex justify-end relative bg-subtle-grid">
+      {/* Right Side: Image */}
+      <div className="flex-1 flex justify-center md:justify-end relative bg-subtle-grid">
         <img
           src="/Eko/images/steth.png"
           alt="Stethoscope"
-          className="max-w-[400px] md:max-w-[350px] h-auto object-contain "
+          className="
+            w-full
+            max-w-[260px]
+            sm:max-w-[300px]
+            md:max-w-[350px]
+            h-auto
+            object-contain
+          "
         />
       </div>
     </section>
@@ -41,6 +49,7 @@ function Newsletter() {
 }
 
 export default Newsletter;
+
 
 
 
