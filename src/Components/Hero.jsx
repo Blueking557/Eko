@@ -55,7 +55,7 @@ export default function Hero() {
         {/* RIGHT IMAGE */}
         <div className="relative flex justify-center items-center min-h-[280px] sm:min-h-[350px] md:min-h-[600px] bg-subtle-grid">
           <img
-            src="/Eko/images/stethoscope.png"
+            src="/Eko/images/steth.png"
             alt="3M Littmann CORE Digital Stethoscope"
             className="relative z-10 w-full max-w-[260px] sm:max-w-sm md:max-w-lg object-contain"
           />

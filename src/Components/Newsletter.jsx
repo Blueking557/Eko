@@ -31,9 +31,9 @@ function Newsletter() {
       {/* Right Side: Image Extending Downwards */}
       <div className="flex-1 flex justify-end relative bg-subtle-grid">
         <img
-          src="/Eko/images/stethoscope.png"
+          src="/Eko/images/steth.png"
           alt="Stethoscope"
-          className="max-w-[300px] md:max-w-[350px] h-auto object-contain -mb-16 md:-mb-20"
+          className="max-w-[400px] md:max-w-[350px] h-auto object-contain "
         />
       </div>
     </section>
